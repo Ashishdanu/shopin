@@ -1,0 +1,22 @@
+#footer {
+    margin-top: 30px;
+}
+#footer-part2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+#footer-section-left {
+  display: flex;
+}
+#footer-section-left p {
+    margin-left: 20px;
+}
+#footer-section-Right {
+  display: flex;
+}
+#footer-section-Right p {
+    margin-right: 20px;
+
+}

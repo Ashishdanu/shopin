@@ -1,0 +1,145 @@
+#main {
+  text-align: center;
+}
+#main > h1 {
+  font-family: sans-serif;
+  font-weight: bold;
+  color: #1a73e8;
+  text-align: center;
+  font-size: 60px;
+}
+
+#input {
+  width: 700px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 25px;
+  padding: 10px;
+}
+#input > input[type="search"] {
+  width: 650px;
+  font-size: 18px;
+  border: none;
+  /* position: relative;
+  z-index: 1; */
+}
+
+#input > input[type="search"]:focus {
+    outline: none;
+}
+/* #input > #input-icon {
+  position: absolute;
+  z-index: 2;
+  left: 360px;
+  top: 268px;
+} */
+#mid-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-family: sans-serif;
+}
+
+#languages {
+  width: 700px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  margin-top: 20px;
+}
+#languages #left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 29%;
+}
+#languages #left p {
+  font-weight: 800;
+  color: black;
+}
+#languages #right {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+strong {
+  margin-top: 30px;
+  display: block;
+}
+
+p {
+  font-size: 14px;
+  margin-top: 5px;
+  color: #5f6368;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+p:hover {
+  color: #1a73e8;
+}
+
+@media (min-width: 680px) and (max-width: 1248px) {
+  /* mobile screen responsiveness */
+  #mid-area {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #languages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  #input > input[type="search"] {
+    width: 300px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #dcdcdc;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    border-style: none;
+    border: none;
+  }
+  #languages #left {
+    width: 100%;
+    text-align: center;
+    /* text-align: center; */
+  }
+  #languages #left p {
+    text-align: center;
+  }
+  #languages #right {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #input > #input-icon {
+    position: absolute;
+    z-index: 2;
+    left: 220px;
+    top: 270px;
+  }
+  #mid-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    margin: auto;
+  }
+  #languages #left strong {
+    text-align: center;
+  }
+}
